@@ -6,22 +6,41 @@
     
     <link rel="icon" href="./favicons/favicon-16x16.png"> <!--AGREGAR NOMBRE DEL DIRECTORIO DE LA IMAGEN-->
    <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
     <title>POKÉDEX</title>
 </head>
 <body>
-    <main>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="pokemon" class="pokemon__image "><!--AGREGAMOS LINK DE IMAGENES POKEAPI-->
+    <main> 
+   
+        <img src="assets/POKEDEX DESIGN.png" alt="pokedex" class="pokedex"> <!--AGREGAR DIRECTORIO POKEDEX IMAGEN-->
+        
+        <img src="#" alt="pokemon" class="pokemon__image "><!--AGREGAMOS LINK DE IMAGENES POKEAPI-->
        
         <h1 class="pokemon__data">
-            <span class="pokemon__number">6</span>
-            - <span class="pokemon__name">charizard</span>
+            <span class="pokemon__number" id="pokeId"></span>
+            - <span class="pokemon__name"id="pokeName"></span>
+            <br/>
+            <span class="pokemon__Type" id="pokeType"></span>
+            <br/>
+            <span class="pokemon__Abilities" id="abilities"></span>
+            <br/>
+            <span class="pokemon__Stats" id="pokeStats"></span>
+            
         </h1>
 
-        <form class="form">
-            <input type="search" class="input__search" placeholder="Name or Number" required/>
-        </form>
        
-        <img src="assets/POKEDEX DESIGN.png" alt="pokedex" class="pokedex"> <!--AGREGAR DIRECTORIO POKEDEX IMAGEN-->
+
+           
+        <form class="form">
+            <input type="search" class="input__search" placeholder="Name or Number" required maxlength="17" />
+          </form>
+           
+            <div class="buttons">
+                <button class="button btn-prev">&lt;</button>
+                <button class="button btn-next">&gt;</button>
+              </div>
+       
+      
     </main>
     
 </body>
